@@ -4,7 +4,27 @@
 }
 .section1{
     width:100%;
-    /* height: 100vh; */
+}
+.loder{
+    position:fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+.loder img{
+    width: 400px;
+} 
+.hide{
+    animation:hide 3s forwards;
+}
+@keyframes hide{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 .main-1{
     width: 100%;
@@ -13,7 +33,6 @@
     padding-top:10px;
     justify-content: space-between;
     background-color: #ffcb00;
-    
 }
 .images img{
     height:auto;
@@ -25,10 +44,10 @@
     list-style: none;
     display: flex;
     margin-top: 20px;
-    font-weight: 400;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Montserrat;
+    font-weight: 600;
     margin-right:20px;    
-    font-size:clamp(10px,2.5vw,30px);
+    font-size:clamp(10px,2.5vw,25px);
 }
 @media screen and (max-width: 420px) {
     .navbar{
@@ -51,26 +70,21 @@
 
 .section-2{
     margin-top:max(100px,2.5vw);
+    margin-right:10px;
+    margin-left:10px;
     width:100%;
+    display:flex;
     height:auto;
 }
 .content{
     width:50%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
     font-size:clamp(15px,4.5vw,40px);
-    border: 2px solid red;
+    font-weight: 700;
+    font-family:kaushan Script;
     line-height:60px;
 }
-.content-3{
+.content-3,.content-5{
     background-image:linear-gradient(43deg,rgb(182, 81, 81)0%,rgb(0, 219, 0)75%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 600;
-}
-.content-5{
-    background-image:linear-gradient(43deg,rgb(197, 80, 80)0%,rgb(0, 219, 0)75%);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 600;
@@ -78,21 +92,33 @@
 .option{
     font-size: 25px;
     display: flex;
-    padding: ;
-    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 60px;
+    gap: 50px;
+    font-family:Oswald;
 }
 .school{
-    /* height:60px; */
-    border:2px solid red;
-    padding:-10px 60px;
+    padding:0px 60px;
     border-radius:20px;
-    font: weight 10px;;
     background-image:linear-gradient(90deg,#ffcb00 35%,#d0af2a 75%);
 }
-.Pre-University{
-        /* height:60px; */
-        border:2px solid red;
-        /* padding:0px 50px 0px 50px; */
-        border-radius:20px;
-        font-weight:10px;
+.image2 img{
+    max-width:80%;
+}
+.content-1{
+    margin-left: 150px;
+    font-family: cursive;
+}
+.content-2{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.content-3{
+    margin-left: 200px;
+}
+.content-4{
+    margin-left:170px;
+}
+.content-5{
+    margin-left:130px;
 }

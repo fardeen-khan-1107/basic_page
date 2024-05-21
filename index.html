@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">   
+<title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="loder">
+        <img src="img3.png" alt="">
+    </div>
     <section class="section-1">
         <div class="main-1">
             <div class="images">
@@ -25,31 +37,40 @@
     </section>
     <section class="section-2">
         <div class="content">
-            <div class="content-1">
+            <p class="content-1">
                 Accura's E-Library,
-            </div>
-            <div class="content-2">
+            </p>
+            <p class="content-2">
                 Explore the Ultimate Hub of 
-            </div>
-            <div class="content-3">
+            </p>
+            <p class="content-3">
                 Textbooks.
-            </div>
-            <div class="content-4">
+            </p>
+            <p class="content-4">
                 Gateway to an
-            </div>
-            <div class="content-5">
+            </p>
+            <p class="content-5">
                 Extensive Collection!
-            </div>
+            </p>
             <div class="option">
-                <div class="school">
+                <i class="school">
                     School
-                </div>
-                <div class="Pre-University">
+                </i>
+                <i class="school">
                     Pre-University
-                </div>
+                </i>
             </div>
         </div>
-        <div></div>
+        <div class="image2">
+            <img src="img2.png" alt="img2">
+        </div>
     </section>
 </body>
+<script>
+    var loader=document.querySelector(".loder");
+    window.addEventListener("load",hide);
+    function hide(){
+        loader.classList.add("hide");
+    }
+</script>
 </html>
